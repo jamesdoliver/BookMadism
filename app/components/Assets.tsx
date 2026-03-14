@@ -36,7 +36,7 @@ export default function Assets() {
             </p>
             <a
               href={asset.href}
-              download={asset.href !== "#"}
+              download={asset.href !== "#" ? "" : undefined}
               className="border border-white text-white text-center px-6 py-3 text-sm uppercase tracking-wider hover:bg-white hover:text-black transition-colors"
             >
               Download
