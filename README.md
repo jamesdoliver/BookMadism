@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Madism — Booking Landing Page
 
-## Getting Started
+Static single-page booking site for DJ Madism. Built with Next.js, Tailwind CSS, deployed on Vercel.
 
-First, run the development server:
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Replacing Placeholder Content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Search the codebase for `TODO` comments to find all placeholders:
 
-## Learn More
+- **Booking email:** Update `bookings@madism.com` in `app/components/Hero.tsx` and `app/components/Contact.tsx`
+- **Press Photos download:** Replace `href="#"` in `app/components/Assets.tsx` with the CDN URL for the press photos zip
+- **Logo Files download:** Replace `href="#"` in `app/components/Assets.tsx` with the CDN URL for the logo files zip
+- **OG image:** Add `/public/images/og.jpg` and uncomment the OG image line in `app/layout.tsx`
 
-To learn more about Next.js, take a look at the following resources:
+## Adding Real Download Files
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Place files in `public/downloads/`:
+- `Madism_EPK_V5.pdf` (already included)
+- `madism-press-photos.zip`
+- `madism-logo-files.zip`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Build & Deploy
 
-## Deploy on Vercel
+```bash
+npm run build   # Outputs to /out
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy to Vercel: connect the repo and Vercel auto-detects the Next.js static export. No special config needed.
