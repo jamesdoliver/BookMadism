@@ -36,6 +36,13 @@ yarn-error.log*
 # vercel
 .vercel
 
+# IDE
+.idea/
+
+# Raw source assets (processed by scripts/process-assets.mjs)
+/picture_assets/
+/Madism_EPK_V5.pdf
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
