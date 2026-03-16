@@ -15,8 +15,8 @@ const assets = [
   {
     name: "Logo Files",
     description: "Logo pack with SVG, PNG formats (.zip)",
-    // TODO: Replace with CDN URL for logo files zip
-    href: "#",
+    href: "https://www.dropbox.com/scl/fo/2ggmrdk6pb3qmridg4r3c/AG7-VeEVNdG2PXVDMfdPEXU?rlkey=7m2a86e3z8bkkevrhxrqzuqik&st=otmzsecv&dl=0",
+    external: true,
   },
 ];
 
