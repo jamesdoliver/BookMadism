@@ -66,7 +66,7 @@ export default function Hero() {
           </a>
           {/* TODO: Confirm booking email */}
           <a
-            href="mailto:bookings@madism.com"
+            href="mailto:frank@madismmusic.com"
             className="bg-white text-black px-8 py-3 text-sm uppercase tracking-wider hover:bg-[#999999] transition-colors"
           >
             Contact Email

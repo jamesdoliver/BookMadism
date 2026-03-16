@@ -9,7 +9,7 @@ export default function Contact() {
       </p>
       {/* TODO: Confirm booking email */}
       <a
-        href="mailto:bookings@madism.com"
+        href="mailto:frank@madismmusic.com"
         className="inline-block bg-white text-black px-10 py-4 text-sm uppercase tracking-wider font-bold hover:bg-[#999999] transition-colors"
       >
         Contact Email
