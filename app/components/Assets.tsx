@@ -4,8 +4,8 @@ const assets = [
   {
     name: "Press Photos",
     description: "High-resolution press photos (.zip)",
-    // TODO: Replace with CDN URL for press photos zip
-    href: "#",
+    href: "https://www.dropbox.com/scl/fo/vghseafub9cgkkaot1ubv/AFFGdPDVFpMzQOsa8oSQjJw?rlkey=bdj90nny52z34ie7evafqfjty&st=ggm2powl&dl=0",
+    external: true,
   },
   {
     name: "EPK",
@@ -36,7 +36,9 @@ export default function Assets() {
             </p>
             <a
               href={asset.href}
-              download={asset.href !== "#" ? "" : undefined}
+              download={"external" in asset ? undefined : asset.href !== "#" ? "" : undefined}
+              target={"external" in asset ? "_blank" : undefined}
+              rel={"external" in asset ? "noopener noreferrer" : undefined}
               className="border border-white text-white text-center px-6 py-3 text-sm uppercase tracking-wider hover:bg-white hover:text-black transition-colors"
             >
               Download
